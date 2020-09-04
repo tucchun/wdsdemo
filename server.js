@@ -1,3 +1,3 @@
 const { spawn } = require('child_process')
-
-spawn('webpack-dev-server')
+const path = require('path')
+spawn('./node_modules/.bin/webpack-dev-server', ['--hot', `--config=${path.resolve(__dirname + '/webpack.config.js')}`])

@@ -40,6 +40,10 @@ module.exports = {
     ]
   },
   devtool: "#source-map",
+  devServer: {
+    contentBase: __dirname,
+    hot: true,
+  },
   plugins: [
     // new HelloCompilationPlugin(),
     // new MyPlugin(),
